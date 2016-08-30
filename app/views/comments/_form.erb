@@ -1,13 +1,21 @@
-<%= form_for([@article, @article.comments.build]) do |f| %>
-    <p>
-      <%= f.label :commenter %><br>
-      <%= f.text_field :commenter %>
-    </p>
-    <p>
-      <%= f.label :body %><br>
-      <%= f.text_area :body %>
-    </p>
-    <p>
-      <%= f.submit %>
-    </p>
+<%= form_for([@article, @article.comments.build], :html => {:class => "form-horizontal"}) do |f| %>
+    <div class="form-group">
+      <%= f.label :commenter, :class => "col-sm-4 control-label" %>
+      <div class="col-sm-8">
+        <%= f.text_field :commenter, :class => "form-control" %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :body, :class => "col-sm-4 control-label" %>
+      <div class="col-sm-8">
+        <%= f.text_area :body, :class => "form-control" %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-sm-offset-4 col-sm-8">
+        <%= f.submit :class => "btn btn-primary" %>
+      </div>
+    </div>
 <% end %>
