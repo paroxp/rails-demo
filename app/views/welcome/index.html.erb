@@ -1,1 +1,17 @@
 <h1>Hello, Rails!</h1>
+
+<nav>
+  <h4>Public</h4>
+  <ul>
+    <li>
+      <%= link_to 'My Blog', controller: 'articles' %>
+    </li>
+  </ul>
+
+  <h4>Admin</h4>
+  <ul>
+    <li>
+      <%= link_to 'New article', new_article_path %>
+    </li>
+  </ul>
+</nav>
