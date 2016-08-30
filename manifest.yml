@@ -1,0 +1,5 @@
+---
+applications:
+- name: rails-blog
+  memory: 512M
+  buildpack: ruby_buildpack
