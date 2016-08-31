@@ -21,7 +21,7 @@ Be patient, it may take a short while to complete.
 This application uses the database. You may want to set up your connection in `config/database.yml`. 
 You may also proceed which will cause usage of `sqlite3` driver.
 
-Once the bundle has gathered all required packages and the database has been set uo, 
+Once the bundle has gathered all required packages and the database has been set, 
 you may want to run the database migration script.
 
 ```
@@ -36,4 +36,7 @@ Run the application, by executing the following command.
 bin/rails server
 ```
 
-All done! Enjoy your new, very simple, blog application!
+All done! Read the output provided by the application. 
+It will mention URL your application can be accessed from and maybe some other potentially useful information. 
+
+Enjoy your new, very simple, blog application!
