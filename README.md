@@ -25,7 +25,7 @@ You may also proceed which will cause usage of `sqlite3` driver.
 
 Thanks to the magic of Rails, we can also use `ENV` variables, to configure our connection with the database.
 Simply by setting the `DATABASE_URL` variable, we can force the application to attempt the connection 
-to the first database it encounters.
+to provided database.
 
 Once the bundle has gathered all required packages and the database has been set, 
 you may want to run the database migration script.
