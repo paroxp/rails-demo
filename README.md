@@ -21,6 +21,12 @@ Be patient, it may take a short while to complete.
 This application uses the database. You may want to set up your connection in `config/database.yml`. 
 You may also proceed which will cause usage of `sqlite3` driver.
 
+**Fun fact time**
+
+Thanks to the magic of Rails, we can also use `ENV` variables, to configure our connection with the database.
+Simply by setting the `DATABASE_URL` variable, we can force the application to attempt the connection 
+to the first database it encounters.
+
 Once the bundle has gathered all required packages and the database has been set, 
 you may want to run the database migration script.
 
