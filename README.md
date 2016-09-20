@@ -8,6 +8,14 @@ Username: `admin`
 
 Password: `password`
 
+## Pre-requisites for running the application
+You will require the pg_config binary, which will usually be included with a postgres package. The libpq-dev package will also be required on Debian machines.
+You will require ruby v2.3.0 or higher
+You will require bundler
+```
+gem install bundler
+```
+
 ## Installation
 
 Installation is really simple. First, we'd like to install any dependencies required by the blog.
